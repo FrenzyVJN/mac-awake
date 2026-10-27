@@ -1,0 +1,11 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint
+        run: brew install shellcheck && shellcheck -x scripts/*.sh tests/helpers.sh tests/unit/run.sh tests/ondevice/run.sh
+      - name: Unit tests (mocked; no real power changes)
+        run: /bin/bash tests/unit/run.sh

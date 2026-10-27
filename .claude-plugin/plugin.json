@@ -1,0 +1,12 @@
+{
+  "name": "mac-awake",
+  "description": "Investigate, manage and test macOS sleep behavior, including whether a MacBook can stay awake with the lid closed. Never claims to override lid-close sleep unless verified.",
+  "version": "0.1.0",
+  "author": {
+    "name": "FrenzyVJN"
+  },
+  "homepage": "https://github.com/FrenzyVJN/mac-awake",
+  "repository": "https://github.com/FrenzyVJN/mac-awake",
+  "license": "MIT",
+  "keywords": ["macos", "sleep", "caffeinate", "pmset", "clamshell"]
+}
